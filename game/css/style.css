@@ -9,11 +9,22 @@ body{
 canvas{
 	border: solid .2em #fff;
 	height: 90vh;
+	float: left;;
 }
 
+img{
+	height: 91.4vh;
+}
+.help{
+	float: left;
+	height: 50%;
+	width: 20%;
+	padding-left: 20px;
+}
 .score{
 	float: left;
-	margin-top: 40%;
+	margin-top: 30%;
+	padding-right: 20px;
 }
 
 #score{
