@@ -17,7 +17,7 @@ function arenaSweep(){
 		arena.unshift(row);
 		++y;
 		player.score += rowCount*10;
-		rowCount *+2;
+		rowCount *=2;
 	}
 }
 
@@ -239,4 +239,5 @@ document.addEventListener('keydown', event => {
 });
 
 playerReset();
+updateScore();
 update();
