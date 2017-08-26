@@ -127,6 +127,9 @@ function playerDrop(){
 		playerReset();
 		arenaSweep();
 		updateScore();
+		if(player.score > player.highscore){
+			player.highscore = player.score;
+		}
 	}
 	dropCounter = 0;
 }
@@ -147,6 +150,8 @@ function playerReset(){
 		arena.forEach(row => row.fill(0));
 		player.score = 0;
 		updateScore();
+		updateHighScore();
+
 	}
 }
 
@@ -206,6 +211,11 @@ function updateScore(){
 	document.getElementById('score').innerText = player.score;
 }
 
+function updateHighScore(){
+	document.getElementById('highscore').innerText = player.highscore;
+}
+
+
 const colors = [
 	null,
 	'#FF0D72',
@@ -223,6 +233,7 @@ const player = {
 	pos: {x: 0, y: 0},
 	matrix: null,
 	score: 0,
+	highscore: 0,
 }
 
 //movement
@@ -240,4 +251,5 @@ document.addEventListener('keydown', event => {
 
 playerReset();
 updateScore();
+updateHighScore();
 update();

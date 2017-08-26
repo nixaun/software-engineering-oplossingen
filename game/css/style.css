@@ -1,0 +1,22 @@
+body{
+	background: #202028;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+
+canvas{
+	border: solid .2em #fff;
+	height: 90vh;
+}
+
+div{
+	float: left;
+}
+
+.wrapper{
+	max-width: : 1080px;
+	margin: 0 auto;
+	padding: 20px;
+}
