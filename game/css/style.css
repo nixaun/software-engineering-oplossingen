@@ -11,12 +11,26 @@ canvas{
 	height: 90vh;
 }
 
-div{
+.score{
 	float: left;
+	margin-top: 40%;
+}
+
+#score{
+	margin-bottom: 20%;
 }
 
 .wrapper{
-	max-width: : 1080px;
+	max-width: 1080px;
 	margin: 0 auto;
 	padding: 20px;
+}
+
+.cfx::before, .cfx::after{
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.cfx::after{
+    clear: both;   
 }
